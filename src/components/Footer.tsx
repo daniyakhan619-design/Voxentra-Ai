@@ -105,7 +105,7 @@ export default function Footer({ darkMode, onScrollTo }: FooterProps) {
                 <MapPin className="w-4.5 h-4.5 text-indigo-400 shrink-0 mt-0.5" />
                 <span>
                   Plaza 45, Phase 6, DHA,<br />
-                  Lahore, Pakistan
+                  Karachi, Pakistan
                 </span>
               </li>
             </ul>

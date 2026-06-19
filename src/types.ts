@@ -45,16 +45,6 @@ export interface PricingPlan {
   ctaText: string;
 }
 
-export interface Testimonial {
-  name: string;
-  role: string;
-  company: string;
-  industry: string;
-  avatar: string;
-  quote: string;
-  rating: number;
-}
-
 export interface FAQItem {
   question: string;
   answer: string;

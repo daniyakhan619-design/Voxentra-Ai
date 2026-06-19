@@ -7,7 +7,6 @@ import Industries from "./components/Industries";
 import DashboardPreview from "./components/DashboardPreview";
 import KeyBenefits from "./components/KeyBenefits";
 import Pricing from "./components/Pricing";
-import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import LeadForm from "./components/LeadForm";
 import Footer from "./components/Footer";
@@ -62,11 +61,11 @@ export default function App() {
 
     // Simulated responsive AI answering
     setTimeout(() => {
-      let botText = "We offer robust AI setups! Starter plans start at PKR 10,000/mo. Would you like me to alert our booking division to arrange a demonstration call for you?";
+      let botText = "We offer robust AI setups! Starter plans start at PKR 20,000/mo. Would you like me to alert our booking division to arrange a demonstration call for you?";
       
       const queryLower = userQuery.toLowerCase();
       if (queryLower.includes("price") || queryLower.includes("cost") || queryLower.includes("charge")) {
-        botText = "Our Starter plan with WhatsApp texting and basic analytics is PKR 10,000/month. Our Professional plan with full AI-called speech lines, texting, and emails is PKR 20,000/month. Custom scales can be scheduled via DHA Lahore HQ!";
+        botText = "Our Starter plan with WhatsApp texting and basic analytics is PKR 20,000/month. Our Professional plan with full AI-called speech lines, texting, and emails is PKR 35,000/month. Custom scales can be scheduled via DHA Karachi HQ!";
       } else if (queryLower.includes("urdu") || queryLower.includes("language") || queryLower.includes("accent")) {
         botText = "Yes! Voxentra has been custom-trained on Pakistani conversational linguistics. We natively support Urdu, standard English, and casual 'Roman Urdu' texting syntax!";
       } else if (queryLower.includes("contact") || queryLower.includes("email") || queryLower.includes("phone")) {
@@ -114,9 +113,6 @@ export default function App() {
         darkMode={darkMode}
         onScrollTo={handleScrollTo}
       />
-
-      {/* Partner testimonials reviews carousel */}
-      <Testimonials darkMode={darkMode} />
 
       {/* Accordion FAQs panel helper */}
       <FAQ darkMode={darkMode} />

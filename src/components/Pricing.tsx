@@ -13,7 +13,7 @@ export default function Pricing({ darkMode, onScrollTo }: PricingProps) {
   const plans: PricingPlan[] = [
     {
       name: "Starter Plan",
-      price: billingCycle === 'monthly' ? "PKR 10,000" : "PKR 8,000",
+      price: billingCycle === 'monthly' ? "PKR 20,000" : "PKR 16,000",
       period: "/month",
       description: "Ideal for small neighborhood cafes, baristas, salons, and medical checkups looking to automate texting support.",
       features: [
@@ -29,7 +29,7 @@ export default function Pricing({ darkMode, onScrollTo }: PricingProps) {
     },
     {
       name: "Professional Plan",
-      price: billingCycle === 'monthly' ? "PKR 20,000" : "PKR 16,000",
+      price: billingCycle === 'monthly' ? "PKR 35,000" : "PKR 28,000",
       period: "/month",
       description: "Our signature plan. Delivers powerful AI telephonic speaking agents, automated booking workflows, and advanced reports.",
       features: [
